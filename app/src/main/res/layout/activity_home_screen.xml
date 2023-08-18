@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeScreen"
+    android:background="#FFFFFF"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/purple_light"/>
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@mipmap/appicon"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudoku by Carat Tech Co."
+        android:layout_toEndOf="@id/appLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        />
+
+    <Button
+        android:id="@+id/howToPlayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="How To Play"
+        android:textColor="@color/darkblue"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:onClick="howToPlayBtnClick"
+        />
+
+    <Button
+        android:id="@+id/newGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Start Game"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/howToPlayBtn"
+        android:layout_marginTop="30dp"
+        android:onClick="howToPlayBtnClick"
+        />
+
+    <Button
+        android:id="@+id/aboutUsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="About Us"
+        android:textColor="@color/darkred"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/newGameBtn"
+        android:layout_marginTop="85dp"
+        android:onClick="howToPlayBtnClick"
+        />
+
+</RelativeLayout>

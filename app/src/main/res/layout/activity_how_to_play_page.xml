@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/blue_light" />
+
+            <ImageButton
+                android:id="@+id/goBackButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/backicon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:onClick="goBackHome"
+                android:contentDescription="Go back button"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:text="RULES OF THE GAME"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/grayd"
+            android:textSize="15dp"
+            android:text="Sudoku is a logic-based number placement puzzle. The goal is to fill a 9x9 grid with the digits 1-9, without repetition in any row, column, and the 3x3 subgrids that compose the grid.\nThe game begins with a partially filled grid. You must fill in the rest of the grid.\nYour games are timed and a score will be calculated for your attempts. Lower times mean higher scores.\nYou are allowed 5 mistakes in Easy mode, 4 in Normal and 3 in Hard." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grayd"
+            android:text="Good luck!" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:text="An example of a correctly completed Sudoku puzzle:"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/img"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="11dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/grayd"
+            android:text="Each row, column and 3x3 subgrid has numbers 1-9 only once" />
+
+    </LinearLayout>
+
+</ScrollView>

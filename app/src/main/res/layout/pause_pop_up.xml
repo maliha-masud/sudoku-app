@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="77dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pausedtitle"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="Game Paused"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/popuptitle2"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Continue"
+        android:textSize="14dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/goToHomeBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/popuptitle2"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/redbg"
+        android:text="Go To Home"
+        android:textSize="14dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -2,8 +2,9 @@
 ## Software Engineering Semester Project
 
 Features:
-  * Read instructions & About Us.
+  * Read instructions for the game
   * Choose game difficulty - Easy (51 numbers shown, 5 mistakes allowed), Medium (40 numbers shown, 4 mistakes allowed), Hard (31 numbers shown, 3 mistakes allowed)
+  * User stats stored using shared preferences
   * Time tracking.
   * Pause game.
   * Lock cell after it is correctly filled.
@@ -14,11 +15,9 @@ Features:
   * Undo button to erase a mistake.
 
 Issues:
-  * Readability of game_screen.xml code.
-  * Board display bug - extends out of the screen.
   * If hint button used to fill in last remaining cell, gets stuck.
+  * Correct boards & add more
+  * Beautify UI
 
 Can add:
   * "Continue game" option.
-  * Store user stats in file.
-  * Add page to show user stats.

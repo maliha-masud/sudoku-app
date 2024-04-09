@@ -61,21 +61,19 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/howToPlayBtn"
         android:layout_marginTop="30dp"
-        android:onClick="howToPlayBtnClick"
-        />
+        android:onClick="howToPlayBtnClick" />
 
     <Button
         android:id="@+id/aboutUsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:text="About Us"
+        android:text="User Stats"
         android:textColor="@color/darkred"
-        android:textSize="18dp"
+        android:textSize="25sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/newGameBtn"
         android:layout_marginTop="85dp"
-        android:onClick="howToPlayBtnClick"
-        />
+        android:onClick="howToPlayBtnClick" />
 
 </RelativeLayout>

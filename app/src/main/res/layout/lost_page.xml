@@ -4,15 +4,16 @@
     android:layout_height="360dp"
     android:orientation="vertical"
     android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
     android:padding="16dp"
-    android:background="#FFFFFF"
-    >
+    android:background="#FFFFFF">
 
     <TextView
         android:id="@+id/popuptitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="58dp"
+        android:gravity="center_horizontal"
         android:text="YOU LOST"
         android:textColor="@color/darkred"
         android:layout_marginTop="77dp"
@@ -32,10 +33,10 @@
 
     <Button
         android:id="@+id/okBtn"
-        android:layout_width="150dp"
+        android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_below="@+id/popuptitle2"
-        android:layout_marginLeft="78dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/teal_700"
         android:text="Back to Home"

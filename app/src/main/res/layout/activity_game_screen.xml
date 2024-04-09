@@ -6,15 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".homeScreen"
-    android:background="#FFFFFF"
-    >
+    android:background="#FFFFFF">
 
+    <!-- Header -->
     <View
         android:id="@+id/purple_background"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@color/blue_light" />
-
     <ImageButton
         android:id="@+id/goBackButton"
         android:layout_width="35dp"
@@ -28,7 +27,6 @@
         android:onClick="goBackHome"
         android:scaleType="centerInside"
         android:src="@mipmap/backicon" />
-
     <ImageButton
         android:id="@+id/pauseButton"
         android:layout_width="26dp"
@@ -43,6 +41,7 @@
         android:scaleType="centerInside"
         android:src="@mipmap/pause" />
 
+    <!-- Information Header -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -53,7 +52,6 @@
         android:paddingStart="11dp"
         android:paddingEnd="14dp"
         android:layout_marginBottom="0dp">
-
         <TextView
             android:id="@+id/level_text"
             android:layout_width="0dp"
@@ -63,7 +61,6 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="17dp"/>
-
         <TextView
             android:id="@+id/time_text"
             android:layout_width="0dp"
@@ -74,7 +71,6 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="17dp"/>
-
         <TextView
             android:id="@+id/score_text"
             android:layout_width="0dp"
@@ -87,6 +83,7 @@
             android:textSize="17dp"/>
     </LinearLayout>
 
+    <!-- Game Table -->
     <TableLayout
         android:id="@+id/board"
         android:layout_width="match_parent"
@@ -94,6 +91,7 @@
         android:gravity="center_horizontal"
         android:layout_below="@+id/header"
         android:padding="5dp"
+        android:layout_marginRight="51dp"
         android:divider="@drawable/shape_border"
         android:showDividers="middle|beginning|end"
         android:layout_centerHorizontal="true">
@@ -103,7 +101,6 @@
                 android:layout_width="4dp"
                 android:layout_height="1dp"
                 android:background="@drawable/shape_border_vertical_bold" />
-
             <Button
                 android:text="1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -114,15 +111,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="gone"/>
-
             <Button
                 android:text="2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -133,15 +127,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:visibility="gone"
                 android:layout_height="1dp"/>
-
             <Button
                 android:text="3"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -152,14 +143,11 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:layout_width="4dp"
                 android:layout_height="1dp"
                 android:background="@drawable/shape_border_vertical_bold" />
-
             <Button
                 android:text="4"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -170,15 +158,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="gone"/>
-
             <Button
                 android:text="5"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -189,15 +174,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="gone"/>
-
             <Button
                 android:text="6"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -208,14 +190,11 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:layout_width="4dp"
                 android:layout_height="1dp"
                 android:background="@drawable/shape_border_vertical_bold" />
-
             <Button
                 android:text="7"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -226,15 +205,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="gone"/>
-
             <Button
                 android:text="8"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -245,15 +221,12 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:background="@android:color/transparent"
-                android:visibility="gone"
-                />
-
+                android:visibility="gone" />
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="gone"/>
-
             <Button
                 android:text="9"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -263,14 +236,11 @@
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
-
+                android:background="@android:color/transparent"/>
             <View
                 android:layout_width="4dp"
                 android:layout_height="1dp"
                 android:background="@drawable/shape_border_vertical_bold" />
-
         </TableRow>
 
         <View
@@ -279,12 +249,10 @@
             android:background="@drawable/shape_border"/>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn1"
                 android:text=" "
@@ -295,14 +263,12 @@
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn2"
                 android:text=" "
@@ -313,14 +279,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn3"
                 android:text=" "
@@ -331,14 +295,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn4"
                 android:text=" "
@@ -349,14 +311,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn5"
                 android:text=" "
@@ -367,14 +327,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn6"
                 android:text=" "
@@ -385,14 +343,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn7"
                 android:text=" "
@@ -403,14 +359,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn8"
                 android:text=" "
@@ -421,14 +375,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn9"
                 android:text=" "
@@ -439,8 +391,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
@@ -450,12 +401,10 @@
         </TableRow>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn10"
                 android:onClick="btn10Pos"
@@ -467,14 +416,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn11"
                 android:onClick="btn11Pos"
@@ -486,14 +433,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn12"
                 android:onClick="btn12Pos"
@@ -505,14 +450,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn13"
                 android:onClick="btn13Pos"
@@ -524,14 +467,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn14"
                 android:onClick="btn14Pos"
@@ -543,14 +484,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn15"
                 android:onClick="btn15Pos"
@@ -562,14 +501,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn16"
                 android:onClick="btn16Pos"
@@ -581,14 +518,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn17"
                 android:onClick="btn17Pos"
@@ -600,14 +535,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn18"
                 android:onClick="btn18Pos"
@@ -619,23 +552,19 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn19"
                 android:onClick="btn19Pos"
@@ -647,14 +576,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn20"
                 android:onClick="btn20Pos"
@@ -666,14 +593,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn21"
                 android:onClick="btn21Pos"
@@ -685,14 +610,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn22"
                 android:onClick="btn22Pos"
@@ -704,14 +627,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn23"
                 android:onClick="btn23Pos"
@@ -723,14 +644,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn24"
                 android:onClick="btn24Pos"
@@ -742,14 +661,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn25"
                 android:onClick="btn25Pos"
@@ -761,14 +678,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn26"
                 android:onClick="btn26Pos"
@@ -780,14 +695,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn27"
                 android:onClick="btn27Pos"
@@ -799,14 +712,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <View
@@ -815,12 +726,10 @@
             android:background="@drawable/shape_border"/>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn28"
                 android:onClick="btn28Pos"
@@ -832,14 +741,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn29"
                 android:onClick="btn29Pos"
@@ -851,14 +758,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn30"
                 android:onClick="btn30Pos"
@@ -870,14 +775,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn31"
                 android:onClick="btn31Pos"
@@ -889,14 +792,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn32"
                 android:onClick="btn32Pos"
@@ -908,14 +809,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn33"
                 android:onClick="btn33Pos"
@@ -927,14 +826,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn34"
                 android:onClick="btn34Pos"
@@ -946,14 +843,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn35"
                 android:onClick="btn35Pos"
@@ -965,14 +860,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn36"
                 android:onClick="btn36Pos"
@@ -984,23 +877,19 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn37"
                 android:onClick="btn37Pos"
@@ -1012,14 +901,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn38"
                 android:onClick="btn38Pos"
@@ -1031,14 +918,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn39"
                 android:onClick="btn39Pos"
@@ -1050,14 +935,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn40"
                 android:onClick="btn40Pos"
@@ -1069,14 +952,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn41"
                 android:onClick="btn41Pos"
@@ -1088,14 +969,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn42"
                 android:onClick="btn42Pos"
@@ -1107,14 +986,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn43"
                 android:onClick="btn43Pos"
@@ -1126,14 +1003,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn44"
                 android:onClick="btn44Pos"
@@ -1145,14 +1020,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn45"
                 android:onClick="btn45Pos"
@@ -1164,21 +1037,19 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
+        </TableRow>
 
-        </TableRow><TableRow>
-
+        <TableRow>
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn46"
             android:onClick="btn46Pos"
@@ -1190,14 +1061,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn47"
             android:onClick="btn47Pos"
@@ -1209,14 +1078,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn48"
             android:onClick="btn48Pos"
@@ -1228,14 +1095,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn49"
             android:onClick="btn49Pos"
@@ -1247,14 +1112,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn50"
             android:onClick="btn50Pos"
@@ -1266,14 +1129,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn51"
             android:onClick="btnPos51"
@@ -1285,14 +1146,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn52"
             android:onClick="btn52Pos"
@@ -1304,14 +1163,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn53"
             android:onClick="btn53Pos"
@@ -1323,14 +1180,12 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn54"
             android:onClick="btn54Pos"
@@ -1342,15 +1197,13 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:background="@android:color/transparent"
-            />
+            android:background="@android:color/transparent" />
 
         <View
             android:background="@drawable/shape_border"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
-
-    </TableRow>
+        </TableRow>
 
         <View
             android:layout_width="match_parent"
@@ -1358,12 +1211,10 @@
             android:background="@drawable/shape_border"/>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn55"
                 android:onClick="btn55Pos"
@@ -1375,14 +1226,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn56"
                 android:onClick="btn56Pos"
@@ -1394,14 +1243,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn57"
                 android:onClick="btn57Pos"
@@ -1413,14 +1260,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn58"
                 android:onClick="btn58Pos"
@@ -1432,14 +1277,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn59"
                 android:onClick="btn59Pos"
@@ -1451,14 +1294,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn60"
                 android:onClick="btn60Pos"
@@ -1470,14 +1311,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn61"
                 android:onClick="btn61Pos"
@@ -1489,14 +1328,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn62"
                 android:onClick="btn62Pos"
@@ -1508,14 +1345,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn63"
                 android:onClick="btn63Pos"
@@ -1527,23 +1362,19 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn64"
                 android:onClick="btn64Pos"
@@ -1555,14 +1386,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn65"
                 android:onClick="btn65Pos"
@@ -1574,14 +1403,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn66"
                 android:onClick="btn66Pos"
@@ -1593,14 +1420,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn67"
                 android:onClick="btn67Pos"
@@ -1612,14 +1437,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn68"
                 android:onClick="btn68Pos"
@@ -1631,14 +1454,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn69"
                 android:onClick="btn69Pos"
@@ -1650,14 +1471,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn70"
                 android:onClick="btn70Pos"
@@ -1669,14 +1488,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn71"
                 android:onClick="btn71Pos"
@@ -1688,14 +1505,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn72"
                 android:onClick="btn72Pos"
@@ -1707,23 +1522,19 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <TableRow>
-
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn73"
                 android:onClick="btn73Pos"
@@ -1735,14 +1546,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn74"
                 android:onClick="btn74Pos"
@@ -1754,14 +1563,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn75"
                 android:onClick="btn75Pos"
@@ -1773,14 +1580,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn76"
                 android:onClick="btn76Pos"
@@ -1792,14 +1597,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn77"
                 android:onClick="btn77Pos"
@@ -1811,14 +1614,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn78"
                 android:onClick="btn78Pos"
@@ -1830,14 +1631,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn79"
                 android:onClick="btn79Pos"
@@ -1849,14 +1648,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn80"
                 android:onClick="btn80Pos"
@@ -1868,14 +1665,12 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
             <Button
                 android:id="@+id/btn81"
                 android:onClick="btn81Pos"
@@ -1887,21 +1682,18 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@android:color/transparent"
-                />
+                android:background="@android:color/transparent" />
 
             <View
                 android:background="@drawable/shape_border"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
-
         </TableRow>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@drawable/shape_border"/>
-
     </TableLayout>
 
     <LinearLayout
@@ -1909,7 +1701,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:layout_below="@+id/board">
 
         <TextView
@@ -1927,9 +1719,7 @@
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:layout_marginLeft="80dp"
-            android:src="@mipmap/hint"
-            />
-
+            android:src="@mipmap/hint" />
         <Button
             android:id="@+id/hintBtn"
             android:layout_width="70dp"
@@ -1944,9 +1734,8 @@
             android:id="@+id/undo_imageview"
             android:layout_width="23dp"
             android:layout_height="23dp"
-            android:layout_marginLeft="-1dp"
+            android:layout_marginLeft="3dp"
             android:src="@mipmap/undo"/>
-
         <Button
             android:id="@+id/UndoBtn"
             android:layout_width="70dp"
@@ -1956,7 +1745,6 @@
             android:text="Undo"
             android:textColor="@color/black"
             android:textSize="20dp" />
-
     </LinearLayout>
 
     <TableLayout
@@ -1967,8 +1755,7 @@
         android:layout_below="@+id/HelpTexts"
         android:stretchColumns="*"
         android:shrinkColumns="*"
-        android:layout_marginTop="9dp"
-        >
+        android:layout_marginTop="9dp">
 
         <TableRow
             android:layout_gravity="center_horizontal">
@@ -1983,7 +1770,6 @@
             android:layout_row="0"
             android:background="@android:color/transparent"
             android:textColor="@color/black"/>
-
         <Button
             android:id="@+id/click2"
             android:layout_width="65dp"
@@ -1994,7 +1780,6 @@
             android:textColor="@color/black"
             android:layout_column="1"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click3"
             android:layout_width="65dp"
@@ -2005,7 +1790,6 @@
             android:textColor="@color/black"
             android:layout_column="2"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click4"
             android:layout_width="65dp"
@@ -2016,7 +1800,6 @@
             android:textColor="@color/black"
             android:layout_column="3"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click5"
             android:layout_width="65dp"
@@ -2027,7 +1810,6 @@
             android:textColor="@color/black"
             android:layout_column="4"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click6"
             android:layout_width="65dp"
@@ -2038,7 +1820,6 @@
             android:textColor="@color/black"
             android:layout_column="5"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click7"
             android:layout_width="65dp"
@@ -2049,7 +1830,6 @@
             android:textColor="@color/black"
             android:layout_column="6"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click8"
             android:layout_width="65dp"
@@ -2060,7 +1840,6 @@
             android:textColor="@color/black"
             android:layout_column="7"
             android:layout_row="0" />
-
         <Button
             android:id="@+id/click9"
             android:layout_width="65dp"
@@ -2071,9 +1850,6 @@
             android:textColor="@color/black"
             android:layout_column="8"
             android:layout_row="0" />
-
         </TableRow>
-
     </TableLayout>
-
 </RelativeLayout>

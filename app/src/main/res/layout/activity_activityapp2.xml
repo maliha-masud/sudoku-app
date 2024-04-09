@@ -6,16 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activityapp2"
-    android:background="#FFFFFF"
-    >
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/myImage"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:src="@mipmap/appicon"
-        android:layout_marginTop="158dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerInParent="true"
+        android:translationY="-25dp"/>
 
     <TextView
         android:id="@+id/sudokulabel"
@@ -27,7 +26,7 @@
         android:textStyle="bold"
         android:layout_below="@id/myImage"
         android:layout_centerHorizontal="true"
-        />
+        android:translationY="-25dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,6 +36,7 @@
         android:textColor="@color/lightgray"
         android:textStyle="italic"
         android:layout_below="@id/sudokulabel"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:translationY="-25dp"/>
 
 </RelativeLayout>

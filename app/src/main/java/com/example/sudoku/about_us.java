@@ -2,11 +2,14 @@ package com.example.sudoku;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class about_us extends AppCompatActivity {
@@ -35,5 +38,17 @@ public class about_us extends AppCompatActivity {
                 return true;
             }
         });
+
+        // Retrieving the highest score and number of games finished
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+
+        int highestScore = sharedPreferences.getInt("highest_score", 0);
+        int gamesFinished = sharedPreferences.getInt("games_finished", 0);
+
+        TextView score = findViewById(R.id.score);
+        TextView games = findViewById(R.id.games_no);
+
+        score.setText("High Score: " + highestScore);
+        games.setText("Games Played: " + gamesFinished);
     }
 }

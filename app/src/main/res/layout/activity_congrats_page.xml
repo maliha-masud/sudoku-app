@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <!-- Header -->
     <View
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:background="@color/purple_light"/>
-
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="55dp"
@@ -20,7 +20,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,21 +31,23 @@
         android:layout_marginBottom="16dp"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:textStyle="italic"
-        />
+        android:textStyle="italic" />
 
+    <!-- great job text -->
     <TextView
         android:id="@+id/congrats_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="  Great Job!"
+        android:text="Great Job!"
+        android:paddingLeft="22dp"
         android:textSize="54sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="95dp"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Level text -->
     <LinearLayout
         android:id="@+id/level"
         android:layout_width="match_parent"
@@ -56,15 +57,12 @@
         android:paddingStart="26dp"
         android:paddingEnd="36dp"
         android:layout_marginBottom="0dp">
-
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_marginRight="10dp"
             android:src="@drawable/ic_level"
-            android:layout_gravity="center_vertical"
-            />
-
+            android:layout_gravity="center_vertical" />
         <TextView
             android:id="@+id/level_text"
             android:layout_width="match_parent"
@@ -73,11 +71,10 @@
             android:text="Level: "
             android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="@color/darkerblue"
-            />
-
+            android:textColor="@color/darkerblue" />
     </LinearLayout>
 
+    <!-- Score text -->
     <LinearLayout
         android:id="@+id/score"
         android:layout_width="match_parent"
@@ -88,15 +85,12 @@
         android:paddingEnd="36dp"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="20dp">
-
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_marginRight="10dp"
             android:src="@drawable/ic_score"
-            android:layout_gravity="center_vertical"
-            />
-
+            android:layout_gravity="center_vertical" />
         <TextView
             android:id="@+id/score_text"
             android:layout_width="match_parent"
@@ -106,9 +100,9 @@
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/darkerblue"/>
-
     </LinearLayout>
 
+    <!-- Time text -->
     <LinearLayout
         android:id="@+id/time"
         android:layout_width="match_parent"
@@ -119,15 +113,12 @@
         android:paddingEnd="36dp"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="20dp">
-
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_marginRight="10dp"
             android:src="@drawable/ic_time"
-            android:layout_gravity="center_vertical"
-            />
-
+            android:layout_gravity="center_vertical" />
         <TextView
             android:id="@+id/time_text"
             android:layout_width="match_parent"
@@ -137,9 +128,9 @@
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/darkerblue"/>
-
     </LinearLayout>
 
+    <!-- Main menu & new game buttons -->
     <Button
         android:id="@+id/main_menu_button"
         android:layout_width="250dp"
@@ -151,7 +142,6 @@
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:textSize="15dp"/>
-
     <Button
         android:id="@+id/new_game_button"
         android:layout_width="250dp"

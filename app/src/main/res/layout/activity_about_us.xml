@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    >
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,12 +12,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@color/blue_light" />
-
             <ImageButton
                 android:id="@+id/goBackButton"
                 android:layout_width="35dp"
@@ -29,41 +26,40 @@
                 android:background="@android:color/transparent"
                 android:scaleType="centerInside"
                 android:onClick="goBackHome"
-                android:contentDescription="Go back button"
-                />
-
+                android:contentDescription="Go back button" />
         </RelativeLayout>
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_marginTop="14dp"
-            android:text="ABOUT US"
+            android:text="User Stats"
             android:textSize="30dp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
-        <ImageView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="18dp"
-            android:src="@mipmap/carattech"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"/>
+            android:text="High Score:"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/black">
+        </TextView>
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/games_no"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_marginHorizontal="15dp"
-            android:textSize="15dp"
-            android:textColor="@color/grayd"
-            android:text="Afnan Azhar and Maliha Masud are university students who have worked on several projects together. With their passion for computer science and solutions, they have created a new platform for Sudoku. Their hard work has resulted in an app that is both user-friendly and highly functional, providing a smooth experience for all users. With their drive and creativity, Afnan and Maliha hope to make waves in the world of technology." />
-
+            android:text="Games Played:"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/black">
+        </TextView>
     </LinearLayout>
 
 </ScrollView>

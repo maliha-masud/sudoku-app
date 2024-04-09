@@ -3,7 +3,9 @@ package com.example.sudoku;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -17,7 +19,6 @@ import java.util.Locale;
 import java.util.Random;
 
 public class gameScreen extends AppCompatActivity {
-
     private Dialog dialog, dialog2;
     private TextView timeTextView;
     private CountDownTimer timer;
@@ -27,10 +28,23 @@ public class gameScreen extends AppCompatActivity {
 
     private Button selectedButton = null;
 
+    // Saving the highest score and number of games finished
+    // SharedPreferences initialization moved to onCreate
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
+    private int highestScore;
+    private int gamesFinished;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
+
+        // Initialize SharedPreferences inside onCreate
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        highestScore = sharedPreferences.getInt("highest_score", 0);
+        gamesFinished = sharedPreferences.getInt("games_finished", 0);
 
         //initialize the Dialogs
         dialog = new Dialog(this);
@@ -282,6 +296,15 @@ public class gameScreen extends AppCompatActivity {
                         selectedButton = null;
                         if(checkComplete(buttons, answers)) {
                             timer.cancel();
+
+                            if (finalScore > highestScore) {
+                                editor.putInt("highest_score", finalScore);
+                                editor.apply();
+                            }
+                            gamesFinished++;
+                            editor.putInt("games_finished", gamesFinished);
+                            editor.apply();
+
                             //create intent
                             Intent intent = new Intent(gameScreen.this, congratsPage.class);
                             intent.putExtra("level", difficulty);
